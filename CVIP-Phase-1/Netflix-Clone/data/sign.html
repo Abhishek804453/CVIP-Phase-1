@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url(back.png);
+        }
+
+        .container {
+            margin: 100px auto;
+            background-image: url(trans.png);
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: gray;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: gray;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #e82727;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b36800;
+        }
+
+        .forgot-password {
+            text-align: center;
+        }
+
+        .forgot-password a {
+            color: #b91880;
+            text-decoration: none;
+        }
+
+        .sign {
+            font-size: 8px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="login-form" action="login.php" method="post">
+            <h2>Sign In</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Sign In">
+        </form>
+        <br>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="sign">
+            <br>
+            <h1>new to netflix? <a href="#">sign up now</a></h1>
+        </div>
+    </div>
+</body>
+
+</html>
